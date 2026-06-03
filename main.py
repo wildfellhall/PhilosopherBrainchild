@@ -110,7 +110,7 @@ from datasets import Dataset
 from transformers import TrainerCallback
 
 model, tokenizer = FastLanguageModel.from_pretrained(
-    model_name = "unsloth/llama-3.1-8b-bnb-4bit",
+    model_name = "unsloth/llama-3.1-8b-bnb-4bit", #Llama 3 works just as well for this in my experience
     max_seq_length = 2048,
     load_in_4bit = True,
 )
@@ -173,13 +173,12 @@ trainer = SFTTrainer(
     tokenizer = tokenizer,
     train_dataset = tokenized_dataset,
     max_seq_length = 2048,
-    # dataset_text_field removed so trainer skips its forced multi-core tokenization
     args = TrainingArguments(
         num_train_epochs = 4,
         per_device_train_batch_size = 4,
         gradient_accumulation_steps = 8,
         warmup_steps = 50,
-        learning_rate = 1e-4,
+        learning_rate = 1e-4, 
         lr_scheduler_type = "cosine",
         weight_decay = 0.01,
         fp16 = not torch.cuda.is_bf16_supported(),
@@ -198,7 +197,7 @@ _______________________________________________________________________________
 FastLanguageModel.for_inference(model)
 test_prompt = input("")
 inputs = tokenizer([f"### Instruction:\nContinue the philosophical discourse, adhering to the intricate reasoning, precise vocabulary, and profound insights characteristic of classic philosophical texts. Expand upon the presented arguments with logical coherence and intellectual rigor, and maintain a logical sequence of ideas and arguments.\n\n### Input:\n{test_prompt}\n\n### Response:\n"], return_tensors="pt").to("cuda")
-outputs = model.generate(**inputs, max_new_tokens=200, temperature=0.55)
+outputs = model.generate(**inputs, max_new_tokens=200, temperature=0.7) # I like to alter the temperature on occasion to see how a model spirals or holds its ground
 print(test_prompt)
 print(tokenizer.decode(outputs[0], skip_special_tokens=True).split("### Response:\n")[-1])
 print("-" * 50)
