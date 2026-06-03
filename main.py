@@ -110,7 +110,7 @@ from datasets import Dataset
 from transformers import TrainerCallback
 
 model, tokenizer = FastLanguageModel.from_pretrained(
-    model_name = "unsloth/llama-3.1-8b-bnb-4bit", #Llama 3 works just as well for this in my experience
+    model_name = "unsloth/llama-3-8b-bnb-4bit", #Llama 3.1 works just as well for this in my experience
     max_seq_length = 2048,
     load_in_4bit = True,
 )
@@ -127,7 +127,7 @@ model = FastLanguageModel.get_peft_model(
 def format_prompt(text_chunk):
     # Optimized for a "Philosopher Continuation" persona
     return {
-        "text": f"### Instruction:\nContinue the given philosophical text, maintaining the original style, argument, and intellectual depth.\n\n### Input:\n{text_chunk[:200]}\n\n### Response:\n{text_chunk[200:]}"
+        "text": f"### Instruction:\nContinue the philosophical discourse, adhering to the reasoning, precise vocabulary, and profound insights characteristic of philosophical texts. Expand upon the presented arguments with logical coherence and intellectual rigor.\n\n### Input:\n{text_chunk[:200]}\n\n### Response:\n{text_chunk[200:]}"
     }
 
 chunks = [full_library_text[i:i + 1100] for i in range(0, len(full_library_text), 1100)]
@@ -143,7 +143,7 @@ class ProgressMonitor(TrainerCallback):
             print(f"\n--- [PHILOSOPHICAL CHECK-IN: STEP {state.global_step}] ---")
             FastLanguageModel.for_inference(model)
             test_prompt = "The human mind, in its ceaseless quest for understanding, often encounters the paradox that"
-            inputs = tokenizer([f"### Instruction:\nContinue the philosophical discourse, adhering to the intricate reasoning, precise vocabulary, and profound insights characteristic of classic philosophical texts. Expand upon the presented arguments with logical coherence and intellectual rigor.\n\n### Input:\n{test_prompt}\n\n### Response:\n"], return_tensors="pt").to("cuda")
+            inputs = tokenizer([f"### Instruction:\nContinue the philosophical discourse, adhering to the reasoning, precise vocabulary, and profound insights characteristic of philosophical texts. Expand upon the presented arguments with logical coherence and intellectual rigor.\n\n### Input:\n{test_prompt}\n\n### Response:\n"], return_tensors="pt").to("cuda")
             outputs = model.generate(**inputs, max_new_tokens=60, temperature=0.8)
             print(test_prompt,tokenizer.decode(outputs[0], skip_special_tokens=True).split("### Response:\n")[-1])
             print("-" * 50)
@@ -155,7 +155,7 @@ from datasets import Dataset
 print("Rebuilding a clean dataset to bypass serialization errors...")
 chunks = [full_library_text[i:i + 1100] for i in range(0, len(full_library_text), 1100)]
 formatted_texts = [
-    f"### Instruction:\nContinue the philosophical discourse, adhering to the intricate reasoning, precise vocabulary, and profound insights characteristic of classic philosophical texts. Expand upon the presented arguments with logical coherence and intellectual rigor.\n\n### Input:\n{chunk[:200]}\n\n### Response:\n{chunk[200:]}"
+    f"### Instruction:\nContinue the philosophical discourse, adhering to the reasoning, precise vocabulary, and profound insights characteristic of philosophical texts. Expand upon the presented arguments with logical coherence and intellectual rigor.\n\n### Input:\n{chunk[:200]}\n\n### Response:\n{chunk[200:]}"
     for chunk in chunks
 ]
 clean_dataset = Dataset.from_dict({"text": formatted_texts})
@@ -196,7 +196,7 @@ _______________________________________________________________________________
 #GENERATION CELL
 FastLanguageModel.for_inference(model)
 test_prompt = input("")
-inputs = tokenizer([f"### Instruction:\nContinue the philosophical discourse, adhering to the intricate reasoning, precise vocabulary, and profound insights characteristic of classic philosophical texts. Expand upon the presented arguments with logical coherence and intellectual rigor, and maintain a logical sequence of ideas and arguments.\n\n### Input:\n{test_prompt}\n\n### Response:\n"], return_tensors="pt").to("cuda")
+inputs = tokenizer([f"### Instruction:\nContinue the philosophical discourse, adhering to the reasoning, precise vocabulary, and profound insights characteristic of philosophical texts. Expand upon the presented arguments with logical coherence and intellectual rigor, and maintain a logical sequence of ideas and arguments.\n\n### Input:\n{test_prompt}\n\n### Response:\n"], return_tensors="pt").to("cuda")
 outputs = model.generate(**inputs, max_new_tokens=200, temperature=0.7) # I like to alter the temperature on occasion to see how a model spirals or holds its ground
 print(test_prompt)
 print(tokenizer.decode(outputs[0], skip_special_tokens=True).split("### Response:\n")[-1])
