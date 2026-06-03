@@ -52,26 +52,26 @@ urls = [
     "https://www.gutenberg.org/files/3207/3207-0.txt",   # Hobbes: Leviathan
     "https://www.gutenberg.org/files/7370/7370-0.txt",   # Locke: Second Treatise of Government
     "https://www.gutenberg.org/files/46333/46333-0.txt", # Rousseau: The Social Contract
-    "https://www.gutenberg.org/files/4280/4280-0.txt",   # The Critique of Pure Reason
-    "https://www.gutenberg.org/files/50922/50922-0.txt", # Perpetual Peace: A Philosophical Essay
-    "https://www.gutenberg.org/files/5682/5682-0.txt",   # Fundamental Principles of the Metaphysic of Morals 
-    "https://www.gutenberg.org/files/5683/5683-0.txt",   # The Critique of Practical Reason
+    "https://www.gutenberg.org/files/4280/4280-0.txt",   # The Critique of Pure Reason - Kant
+    "https://www.gutenberg.org/files/50922/50922-0.txt", # Perpetual Peace: A Philosophical Essay - Kant
+    "https://www.gutenberg.org/files/5682/5682-0.txt",   # Fundamental Principles of the Metaphysic of Morals - Kant
+    "https://www.gutenberg.org/files/5683/5683-0.txt",   # The Critique of Practical Reason - Kant
     "https://www.gutenberg.org/files/48433/48433-0.txt", # Kant's Critique of Judgement
     "https://www.gutenberg.org/files/52821/52821-0.txt", # Kant's Prolegomena to Any Future Metaphysics
     "https://www.gutenberg.org/files/56811/56811-0.txt", # Hegel: The Phenomenology of Mind 
     "https://www.gutenberg.org/files/41551/41551-0.txt", # Hegel: The Philosophy of History
     "https://www.gutenberg.org/files/51468/51468-0.txt", # Hegel: The Logic 
     "https://www.gutenberg.org/files/58013/58013-0.txt", # Schopenhauer: The Wisdom of Life 
-    "https://www.gutenberg.org/files/1998/1998-0.txt",   # Thus Spake Zarathustra
-    "https://www.gutenberg.org/files/4363/4363-0.txt",   # Beyond Good and Evil
-    "https://www.gutenberg.org/files/52190/52190-0.txt", # Ecce Homo
-    "https://www.gutenberg.org/files/51356/51356-0.txt", # The Birth of Tragedy
-    "https://www.gutenberg.org/files/52319/52319-0.txt", # The Geneaology of Morals
-    "https://www.gutenberg.org/files/52263/52263-0.txt", # The Twilight of the Idols
-    "https://www.gutenberg.org/files/19322/19322-0.txt", # The Antichrist
-    "https://www.gutenberg.org/files/38145/38145-0.txt", # Human, All Too Human
-    "https://www.gutenberg.org/files/37841/37841-0.txt", # Human, All Too Human Book II 
-    "https://www.gutenberg.org/files/39955/39955-0.txt", # The Dawn of Day
+    "https://www.gutenberg.org/files/1998/1998-0.txt",   # Thus Spake Zarathustra - Nietzsche 
+    "https://www.gutenberg.org/files/4363/4363-0.txt",   # Beyond Good and Evil - Nietzsche 
+    "https://www.gutenberg.org/files/52190/52190-0.txt", # Ecce Homo - Nietzsche 
+    "https://www.gutenberg.org/files/51356/51356-0.txt", # The Birth of Tragedy - Nietzsche 
+    "https://www.gutenberg.org/files/52319/52319-0.txt", # The Geneaology of Morals - Nietzsche 
+    "https://www.gutenberg.org/files/52263/52263-0.txt", # The Twilight of the Idols - Nietzsche 
+    "https://www.gutenberg.org/files/19322/19322-0.txt", # The Antichrist - Nietzsche
+    "https://www.gutenberg.org/files/38145/38145-0.txt", # Human, All Too Human - Nietzsche 
+    "https://www.gutenberg.org/files/37841/37841-0.txt", # Human, All Too Human Book II - Nietzsche
+    "https://www.gutenberg.org/files/39955/39955-0.txt", # The Dawn of Day - Nietzsche
     "https://www.gutenberg.org/files/205/205-0.txt",     # Thoreau: Walden, And On The Duty Of Civil Disobedience
     "https://www.gutenberg.org/files/26716/26716-0.txt", # Ruskin: The Crown of Wild Olive
 ]
