@@ -78,6 +78,7 @@ urls = [
     "https://www.gutenberg.org/files/26716/26716-0.txt", # Ruskin: The Crown of Wild Olive
 ]
 
+# I always have to clean Gutenberg text, but I may make this phase of the project more severe going forward
 def clean_classic_text(text):
     start_markers = ["*** START OF THIS PROJECT", "*** START OF THE PROJECT"]
     end_markers = ["*** END OF THIS PROJECT", "*** END OF THE PROJECT"]
