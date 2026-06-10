@@ -34,6 +34,7 @@ ______________________________________________________________
 import requests
 import re
 
+# Definitely missing some significant titles, but there was a certain era and type of philosopher that I was more focused on capturing. 
 urls = [
     "https://www.gutenberg.org/files/1497/1497-0.txt",   # Plato: The Republic
     "https://www.gutenberg.org/files/1600/1600-0.txt",   # Plato: Symposium 
