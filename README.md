@@ -15,3 +15,5 @@ Note: As this is a continuation model, I've denoted where my prompts end with sq
 
 ## "One Shot" Results: 
 [When one gazes upon the people with whom one has cavorted, mourned, and fought for the last time, knowing not that the aforesaid individuals are never to] be seen again, one experiences a feeling which is only comparable to the feeling of a man who has been shipwrecked: the feeling of having been cast into a world of which one knows not whether it will ever be able to communicate with the former world. When one feels this feeling, one must look for new shores, new lands, new men, and new hopes. The man who has been shipwrecked has his own ideas about what is good and what is bad.
+
+## Experiment: Song Lyrics
