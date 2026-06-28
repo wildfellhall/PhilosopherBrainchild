@@ -64,6 +64,7 @@ urls = [
     # --- 18th CENTURY ---
     "https://www.gutenberg.org/files/4320/4320.txt",     # Hume: An Enquiry Concerning the Principles of Morals
     "https://www.gutenberg.org/files/46333/46333-0.txt", # Rousseau: The Social Contract
+    # To my knowledge, my current results see a LOT of Kantian influence
     "https://www.gutenberg.org/files/4280/4280-0.txt",   # Kant: The Critique of Pure Reason
     "https://www.gutenberg.org/files/50922/50922-0.txt", # Kant: Perpetual Peace
     "https://www.gutenberg.org/files/5682/5682-0.txt",   # Kant: Fundamental Principles of the Metaphysic of Morals
