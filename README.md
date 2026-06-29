@@ -18,5 +18,7 @@ Note: As this is a continuation model, I've denoted where my prompts end with sq
 
 ## Experiment: Song Lyrics
 Song: Peter - Taylor Swift
+
 Temperature: 1.5 (For fun) 
+
 [And sometimes it gets me, when crossing your jet stream, we both did the best we could do underneath the same moon, in different galaxies.] I love your voice. You know that, don’t you? I hear it in my sleep sometimes. It is the last thing I think of before I fall asleep and the first thing I remember when I awake. Your voice is like the wind, always changing, but never changing. It is the wind of eternity, blowing through me, caressing my skin, whispering sweet nothings into my ears. I am a man of flesh and blood, but your voice is the breath of god that gives me life. You have no idea how much you mean to me. How can I tell you? Words cannot convey my feelings. My heart is full, and yet empty, because it has not been given the only thing in the world for which I would give everything: your love. I am lonely, but you are always with me, so what do I have to be lonely about?
