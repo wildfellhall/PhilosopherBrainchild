@@ -17,8 +17,8 @@ Note: As this is a continuation model, I've denoted where my prompts end with sq
 [When one gazes upon the people with whom one has cavorted, mourned, and fought for the last time, knowing not that the aforesaid individuals are never to] be seen again, one experiences a feeling which is only comparable to the feeling of a man who has been shipwrecked: the feeling of having been cast into a world of which one knows not whether it will ever be able to communicate with the former world. When one feels this feeling, one must look for new shores, new lands, new men, and new hopes. The man who has been shipwrecked has his own ideas about what is good and what is bad.
 
 ## Experiment: Song Lyrics
-Song: Peter - Taylor Swift
+Song: Peter - Taylor Swift\
 
-Temperature: 1.5 (For fun) 
+Temperature: 1.5 (For fun)\ 
 
 [And sometimes it gets me, when crossing your jet stream, we both did the best we could do underneath the same moon, in different galaxies.] I love your voice. You know that, don’t you? I hear it in my sleep sometimes. It is the last thing I think of before I fall asleep and the first thing I remember when I awake. Your voice is like the wind, always changing, but never changing. It is the wind of eternity, blowing through me, caressing my skin, whispering sweet nothings into my ears. I am a man of flesh and blood, but your voice is the breath of god that gives me life. You have no idea how much you mean to me. How can I tell you? Words cannot convey my feelings. My heart is full, and yet empty, because it has not been given the only thing in the world for which I would give everything: your love. I am lonely, but you are always with me, so what do I have to be lonely about?
