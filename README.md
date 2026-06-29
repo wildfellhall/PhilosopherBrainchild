@@ -1,7 +1,8 @@
 # PhilosopherBrainchild
 I was bored so I decided to fine-tune a small language model on the works of several philosophers to see what viewpoints it would spew. A lot of the code will be extremely similar to other repositories of mind (ie. the Feminine Classics model), but it never hurts to document something separately. 
-Interesting Note: The model, on my first attempt to train it, latched on to the word "intricate" in the prompt, so I'll see how it fares with the word's removal. 
-Note: As this is a continuation model, I've denoted where my prompts end with square brackets. 
+Interesting Note: The model, on my first attempt to train it, latched on to the word "intricate" in the prompt, so I'll see how it fares with the word's removal. \
+Note: As this is a continuation model, I've denoted where my prompts end with square brackets. \
+I find that this specific model is very well suited to higher temperatures because of the nature of verbose philosophical texts. 
 ## Results: 
 [We come to, through this circuitous path of cogitation, the conclusion that] the conscientious faculties of the human mind are the only ones which deserve to be considered as moral causes, and that the only moral effects which can be ascribed to them are those which are produced by their influence on the will. It is evident that the moral worth of an action does not consist in the effect expected from it, nor even in the maxim from which the action is done, but purely and simply in the deed itself considered as such, and independently of all the consequences which may follow from it. For otherwise there would always remain the possibility that we might have done the same thing from a very different maxim, and that we might have been even forced to it by an external necessity, so that in that case the moral worth of the deed would be lost. The pre-eminent good which we call moral can therefore consist in nothing else than the conception of a worth which even we ourselves respect. (oldest result, before slight changes were made) 
 
